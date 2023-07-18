@@ -1,0 +1,37 @@
+In chapter 8 of the first collection of his writings, Ramanujan showed that $1+2+3+4+\cdots = \frac{-1}{12}$ using two
+methods.
+The first key observation is that the series $1+2+3+4+\cdots$ is similar to the alternating series of natural
+numbers $1-2+3-4+\cdots$.
+Although this series is also divergent, it is much easier to work with.
+There are several classical ways to assign a final value to this series, known since the 18th century.
+
+In order to bring the series $1+2+3+4+\cdots$ to the form $1-2+3-4+\cdots$, we can subtract 4 from the second
+term, 8 from the fourth term, 12 from the sixth, etc.
+The total value to be subtracted is expressed by the series $4+8+12+16+\cdots$, which is obtained by multiplying the
+original series $1+2+3+4+\cdots$ by 4.
+Let be $c$
+\begin{equation*}
+    c = 1+2+3+4+\cdots
+\end{equation*}
+Then $4c$ is
+\begin{equation*}
+    4c = 4+8+12+16+\cdots
+\end{equation*}
+If we subtract $4c$ from $c$ we get
+\begin{equation}
+    -3c = 1-2+3-4+\cdots\label{eq:equation2}
+\end{equation}
+Here we notice that $1-2+3-4+\cdots$ is Taylor series $T(x)$ of $f(x) = \frac{1}{(1+x)^2}$ for $x=1$, eg
+\begin{align*}
+    T(x) &= 1 - 2x + 3x^2 - 4x^3 + 5x^4 - 6x^5 + O(x^6) \\
+    T(1) &= 1 - 2 + 3 - 4 + 5 - 6 + \cdots
+\end{align*}
+Therefore, equation (2.1) turns to
+\begin{align*}
+    -3c = 1-2+3-4+\cdots = \frac{1}{(1 + 1)^2} = \frac{1}{4}
+\end{align*}
+Finally, the sum of natural series is
+\begin{equation*}
+    c = 1+2+3+4+\cdots = -\frac{1}{12}.
+\end{equation*}
+Furthermore, this approach was extended to Ramanujan's summation method, which involves Euler-Maclaurin formula.

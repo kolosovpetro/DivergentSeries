@@ -1,0 +1,16 @@
+Ramanujan summation essentially is a property of the partial sums, rather than a property of the entire sum,
+as that doesn't exist.
+If we take the Euler-Maclaurin summation formula together with the correction rule using Bernoulli numbers, we see that
+\begin{align*}
+    \frac {1}{2}f(0)+f(1)+\cdots +f(n-1)+{\frac {1}{2}}f(n)
+    &={\frac {1}{2}}[f(0)+f(n)]+\sum _{k=1}^{n-1}f(k)\\
+    &=\int _{0}^{n}f(x)\,dx+\sum _{k=1}^{p}{\frac {B_{k+1}}{(k+1)!}}\left[f^{(k)}(n)-f^{(k)}(0)\right]+R_{p}
+\end{align*}
+Ramanujan wrote it for the case p going to infinity
+\begin{equation*}
+    \sum _{k=1}^{x}f(k)=C+\int _{0}^{x}f(t)\,dt+{\frac {1}{2}}f(x)+\sum_{k=1}^{\infty }{\frac {B_{2k}}{(2k)!}}f^{(2k-1)}(x)
+\end{equation*}
+Therefore, yet again we get a value of natural series equals to $-\frac{1}{12}$
+\begin{equation*}
+    \sum_{k=1}^{\infty} k =-{\frac {1}{2}}f(0)-\sum _{k=1}^{\infty }{\frac {B_{2k}}{(2k)!}}f^{(2k-1)}(0) = \frac {1}{6}\cdot {\frac {1}{2!}}=-\frac {1}{12}
+\end{equation*}
